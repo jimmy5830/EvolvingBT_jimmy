@@ -1,0 +1,4 @@
+[submodule "SurvivalGame/Plugins/EvolvingBehavior"]
+	path = SurvivalGame/Plugins/EvolvingBehavior
+	url = git@gitlab.com:NPC-Dev/evolvingbehavior.git
+	branch = 0.2.0
