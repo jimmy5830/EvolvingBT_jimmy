@@ -7,13 +7,16 @@
 #include "Dom/JsonObject.h"
 #include "PlayerRecorder.generated.h"
 
-// ÇÑ ÇÁ·¹ÀÓÀÇ Á¤º¸¸¦ ÀúÀåÇÒ ±¸Á¶Ã¼
+// ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã¼
 struct FRecordData
 {
 	float Time;
 	FVector Location;
 	FRotator Rotation;
-	float Health; // ºí·çÇÁ¸°Æ®¿¡¼­ ¹Þ¾Æ¿Ã Ã¼·Â °ª
+	float Health; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¾Æ¿ï¿½ Ã¼ï¿½ï¿½ ï¿½ï¿½
+
+	// Action 
+	FString Action;
 };
 
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
@@ -31,15 +34,15 @@ protected:
 public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-	// ºí·çÇÁ¸°Æ®¿¡¼­ ÇöÀç Ã¼·Â°ªÀ» ³Ö¾îÁÙ º¯¼ö
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã¼ï¿½Â°ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Recorder")
 	float CurrentHealth = 100.0f;
 
 private:
-	// µ¥ÀÌÅÍ¸¦ ¸ð¾ÆµÑ ¹è¿­
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½Æµï¿½ ï¿½è¿­
 	TArray<FRecordData> History;
 	float StartTime;
 
-	// ÀúÀå ÇÔ¼ö
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½
 	void SaveToJson();
 };

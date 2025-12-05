@@ -10,14 +10,14 @@ UPlayerRecorder::UPlayerRecorder()
 {
 	PrimaryComponentTick.bCanEverTick = true;
 
-	// 0.1f = 0.1ÃÊ¸¶´Ù Tick ½ÇÇà
+	// 0.1f = 0.1ï¿½Ê¸ï¿½ï¿½ï¿½ Tick ï¿½ï¿½ï¿½ï¿½
 	PrimaryComponentTick.TickInterval = 0.2f;
 }
 
 void UPlayerRecorder::BeginPlay()
 {
 	Super::BeginPlay();
-	// ½ÃÀÛ ½Ã°£ ±â·Ï
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½
 	StartTime = GetWorld()->GetTimeSeconds();
 }
 
@@ -25,18 +25,36 @@ void UPlayerRecorder::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	// ÁÖÀÎ(ÇÃ·¹ÀÌ¾î)ÀÌ ¾øÀ¸¸é Áß´Ü
+	// ï¿½ï¿½ï¿½ï¿½(ï¿½Ã·ï¿½ï¿½Ì¾ï¿½)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß´ï¿½
 	AActor* Owner = GetOwner();
 	if (!Owner) return;
 
-	// 1. ÇöÀç »óÅÂ Ä¸Ã³
+	// 1. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ä¸Ã³
 	FRecordData Data;
 	Data.Time = GetWorld()->GetTimeSeconds() - StartTime;
 	Data.Location = Owner->GetActorLocation();
 	Data.Rotation = Owner->GetActorRotation();
-	Data.Health = CurrentHealth; // ºí·çÇÁ¸°Æ®°¡ ¾÷µ¥ÀÌÆ®ÇØÁØ °ª »ç¿ë
+	Data.Health = CurrentHealth; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½
 
-	// 2. ¹è¿­¿¡ ÀúÀå
+	// 2. GetCurrentAction() Call on Playerpawn
+	// FString GetCurrentAction() (No input parameter, FString return)
+	FString ActionValue;
+	if (UFunction* Func = Owner->FindFunction(FName("GetCurrentAction")))
+	{
+		// ë°˜í™˜ ê°’ë§Œ ìˆëŠ” íŒŒë¼ë¯¸í„° êµ¬ì¡°ì²´. ë¸”ë£¨í”„ë¦°íŠ¸ í•¨ìˆ˜ê°€ ì •í™•íˆ ì´ ì‹œê·¸ë‹ˆì²˜ì—¬ì•¼ ë™ì‘í•©ë‹ˆë‹¤.
+		struct FGetCurrentAction_Params
+		{
+			FString ReturnValue;
+		};
+
+		FGetCurrentAction_Params Params;
+		Owner->ProcessEvent(Func, &Params);
+		ActionValue = Params.ReturnValue;
+	}
+	// ì—†ìœ¼ë©´ ë¹ˆ ë¬¸ìì—´ë¡œ ë‚¨ê¹€
+	Data.Action = "Chase";
+
+	// 2. ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	History.Add(Data);
 }
 
@@ -48,7 +66,7 @@ void UPlayerRecorder::EndPlay(const EEndPlayReason::Type EndPlayReason)
 
 void UPlayerRecorder::SaveToJson()
 {
-	// JSON ¹è¿­ »ı¼º
+	// JSON ï¿½è¿­ ï¿½ï¿½ï¿½ï¿½
 	TArray<TSharedPtr<FJsonValue>> JsonArray;
 
 	for (const FRecordData& Data : History)
@@ -58,27 +76,32 @@ void UPlayerRecorder::SaveToJson()
 		Row->SetNumberField("Time", Data.Time);
 		Row->SetNumberField("Health", Data.Health);
 
-		// À§Ä¡ Á¤º¸
+		// ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½
 		TSharedPtr<FJsonObject> Pos = MakeShareable(new FJsonObject);
 		Pos->SetNumberField("X", Data.Location.X);
 		Pos->SetNumberField("Y", Data.Location.Y);
 		Pos->SetNumberField("Z", Data.Location.Z);
 		Row->SetObjectField("Position", Pos);
 
-		// ¹è¿­¿¡ Ãß°¡
+		// action 
+		Row->SetStringField("Action", Data.Action);
+
+		// ï¿½è¿­ï¿½ï¿½ ï¿½ß°ï¿½
 		JsonArray.Add(MakeShareable(new FJsonValueObject(Row)));
+
+
 	}
 
-	// ÃÖÁ¾ °´Ã¼
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼
 	TSharedPtr<FJsonObject> Root = MakeShareable(new FJsonObject);
 	Root->SetArrayField("SessionData", JsonArray);
 
-	// ¹®ÀÚ¿­·Î º¯È¯
+	// ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
 	FString OutputString;
 	TSharedRef<TJsonWriter<>> Writer = TJsonWriterFactory<>::Create(&OutputString);
 	FJsonSerializer::Serialize(Root.ToSharedRef(), Writer);
 
-	// ÆÄÀÏ ÀúÀå °æ·Î: ÇÁ·ÎÁ§Æ®Æú´õ/Saved/Recordings/
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½/Saved/Recordings/
 	FString FileName = FString::Printf(TEXT("Record_%s.json"), *FDateTime::Now().ToString(TEXT("%Y%m%d_%H%M%S")));
 	FString FilePath = FPaths::ProjectSavedDir() + "Recordings/" + FileName;
 
