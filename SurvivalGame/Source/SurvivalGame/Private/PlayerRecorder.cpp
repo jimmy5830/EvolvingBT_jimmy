@@ -6,6 +6,8 @@
 #include "Misc/FileHelper.h"
 #include "Misc/Paths.h"
 
+#include "BehaviorTree/BTNode.h"
+
 UPlayerRecorder::UPlayerRecorder()
 {
 	PrimaryComponentTick.bCanEverTick = true;
@@ -39,20 +41,8 @@ void UPlayerRecorder::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 	// 2. GetCurrentAction() Call on Playerpawn
 	// FString GetCurrentAction() (No input parameter, FString return)
 	FString ActionValue;
-	if (UFunction* Func = Owner->FindFunction(FName("GetCurrentAction")))
-	{
-		// 반환 값만 있는 파라미터 구조체. 블루프린트 함수가 정확히 이 시그니처여야 동작합니다.
-		struct FGetCurrentAction_Params
-		{
-			FString ReturnValue;
-		};
-
-		FGetCurrentAction_Params Params;
-		Owner->ProcessEvent(Func, &Params);
-		ActionValue = Params.ReturnValue;
-	}
 	// 없으면 빈 문자열로 남김
-	Data.Action = "Chase";
+	Data.Action =  "Chase" /*8GetNodeName()*/;
 
 	// 2. �迭�� ����
 	History.Add(Data);
