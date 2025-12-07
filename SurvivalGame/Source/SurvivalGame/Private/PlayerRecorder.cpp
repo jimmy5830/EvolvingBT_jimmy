@@ -16,6 +16,9 @@ UPlayerRecorder::UPlayerRecorder()
 	PrimaryComponentTick.TickInterval = 0.2f;
 }
 
+
+
+
 void UPlayerRecorder::BeginPlay()
 {
 	Super::BeginPlay();
@@ -38,11 +41,30 @@ void UPlayerRecorder::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 	Data.Rotation = Owner->GetActorRotation();
 	Data.Health = CurrentHealth; // �������Ʈ�� ������Ʈ���� �� ���
 
+	// ==== (1) 적과의 거리 ====
+	if (TargetEnemy)
+	{
+		Data.DistanceToEnemy = FVector::Dist(
+			Owner->GetActorLocation(),
+			TargetEnemy->GetActorLocation()
+		);
+	}
+	else
+	{
+		Data.DistanceToEnemy = -1.f;  // 적이 없으면 -1
+	}
+
+	// ==== (2) 공격 중인지 여부 ====
+	Data.bIsAttacking = bIsAttackingFlag;
+
+
 	// 2. GetCurrentAction() Call on Playerpawn
 	// FString GetCurrentAction() (No input parameter, FString return)
 	FString ActionValue;
 	// 없으면 빈 문자열로 남김
-	Data.Action =  "Chase" /*8GetNodeName()*/;
+	//Data.Action =  "Idle" /*8GetNodeName()*/;
+	//실제 행동 이름 가져오기
+	Data.Action = CurrentAction;
 
 	// 2. �迭�� ����
 	History.Add(Data);
@@ -72,6 +94,13 @@ void UPlayerRecorder::SaveToJson()
 		Pos->SetNumberField("Y", Data.Location.Y);
 		Pos->SetNumberField("Z", Data.Location.Z);
 		Row->SetObjectField("Position", Pos);
+
+		// DistanceToEnemy
+		Row->SetNumberField("DistanceToEnemy", Data.DistanceToEnemy);
+
+		// IsAttacking
+		Row->SetBoolField("IsAttacking", Data.bIsAttacking);
+
 
 		// action 
 		Row->SetStringField("Action", Data.Action);
