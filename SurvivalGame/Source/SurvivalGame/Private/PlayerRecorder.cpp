@@ -7,6 +7,9 @@
 #include "Misc/Paths.h"
 
 #include "BehaviorTree/BTNode.h"
+#include "Kismet/KismetMathLibrary.h"
+#include "Kismet/KismetSystemLibrary.h"
+
 
 UPlayerRecorder::UPlayerRecorder()
 {
@@ -66,8 +69,38 @@ void UPlayerRecorder::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 	//실제 행동 이름 가져오기
 	Data.Action = CurrentAction;
 
+
+	// ====(3) Sub-Reward 계산===
+
+	float DamagePotential = 0.f;
+	float Survivability = 0.f;
+	float Safety = 0.f;
+
+	if (TargetEnemy)
+	{
+		float Dist = Data.DistanceToEnemy;
+
+		float NormDist = 1.0f - FMath::Clamp(Dist / 1000.f, 0.f, 1.f);
+		float AttackBonus = bIsAttackingFlag ? 0.5f : 0.f;
+
+		DamagePotential = NormDist + AttackBonus;
+		Survivability = FMath::Clamp(Dist / 1000.f, 0.f, 1.f);
+
+		if (Dist < 200.f)       Safety = -1.0f;
+		else if (Dist < 400.f)  Safety = -0.5f;
+		else                    Safety = 0.2f;
+	}
+
+	Data.SubReward.Empty();
+	Data.SubReward.Add(DamagePotential);
+	Data.SubReward.Add(Survivability);
+	Data.SubReward.Add(Safety);
+
+	//==============================================
 	// 2. �迭�� ����
 	History.Add(Data);
+
+
 }
 
 void UPlayerRecorder::EndPlay(const EEndPlayReason::Type EndPlayReason)
@@ -104,6 +137,19 @@ void UPlayerRecorder::SaveToJson()
 
 		// action 
 		Row->SetStringField("Action", Data.Action);
+
+	
+		// SubReward 저장
+		TArray<TSharedPtr<FJsonValue>> RewardArray;
+
+		for (float v : Data.SubReward)
+		{
+			RewardArray.Add(MakeShareable(new FJsonValueNumber(v)));
+		}
+
+		Row->SetArrayField("SubReward", RewardArray);
+
+
 
 		// �迭�� �߰�
 		JsonArray.Add(MakeShareable(new FJsonValueObject(Row)));

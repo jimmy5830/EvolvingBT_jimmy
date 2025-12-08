@@ -57,6 +57,28 @@
 // ========================
 // UE 리플렉션 가능 구조체로 변경
 // ========================
+//USTRUCT(BlueprintType)
+//struct FSubReward
+//{
+//    GENERATED_BODY()
+//
+//    UPROPERTY()
+//    float DamagePotential = 0.f;
+//
+//    UPROPERTY()
+//    float Survivability = 0.f;
+//
+//    UPROPERTY()
+//    float Safety = 0.f;
+//
+//    UPROPERTY()
+//    float DistanceDelta = 0.f;
+//
+//    UPROPERTY()
+//    float LineOfSight = 0.f;
+//};
+
+
 USTRUCT(BlueprintType)
 struct FRecordData
 {
@@ -83,6 +105,9 @@ struct FRecordData
 
     UPROPERTY()
     FString Action;
+
+    UPROPERTY()
+    TArray<float> SubReward;
 };
 
 
