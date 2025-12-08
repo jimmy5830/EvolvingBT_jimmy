@@ -9,13 +9,14 @@
 #include "BehaviorTree/BTNode.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Kismet/KismetSystemLibrary.h"
+#include "DrawDebugHelpers.h" 
 
 
 UPlayerRecorder::UPlayerRecorder()
 {
 	PrimaryComponentTick.bCanEverTick = true;
 
-	// 0.1f = 0.1�ʸ��� Tick ����
+	// 0.1f = 0.1초마다 Tick 실행
 	PrimaryComponentTick.TickInterval = 0.2f;
 }
 
@@ -25,7 +26,7 @@ UPlayerRecorder::UPlayerRecorder()
 void UPlayerRecorder::BeginPlay()
 {
 	Super::BeginPlay();
-	// ���� �ð� ���
+	// 시작 시간 기록
 	StartTime = GetWorld()->GetTimeSeconds();
 }
 
@@ -33,16 +34,18 @@ void UPlayerRecorder::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	// ����(�÷��̾�)�� ������ �ߴ�
+	// 플레이어(PlayerRecorder 컴포넌트의 주인)가 없으면 중단
 	AActor* Owner = GetOwner();
 	if (!Owner) return;
 
-	// 1. ���� ���� ĸó
+	bool bCheckTargetFound = false; // TargetFound 임시 저장 변수
+
+	// 1. 현재 상태 캡처
 	FRecordData Data;
 	Data.Time = GetWorld()->GetTimeSeconds() - StartTime;
 	Data.Location = Owner->GetActorLocation();
 	Data.Rotation = Owner->GetActorRotation();
-	Data.Health = CurrentHealth; // �������Ʈ�� ������Ʈ���� �� ���
+	Data.Health = CurrentHealth; // 블루프린트가 업데이트해준 값 사용
 
 	// ==== (1) 적과의 거리 ====
 	if (TargetEnemy)
@@ -51,6 +54,45 @@ void UPlayerRecorder::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 			Owner->GetActorLocation(),
 			TargetEnemy->GetActorLocation()
 		);
+
+		// TargetEnemy를 바라보는지 확인
+		FVector StartLocation;
+		FRotator LookRotation;
+
+		APawn* OwnerPawn = Cast<APawn>(Owner);
+		if (OwnerPawn && OwnerPawn->GetController())
+		{
+			OwnerPawn->GetController()->GetPlayerViewPoint(StartLocation, LookRotation);
+		}
+		else
+		{
+			StartLocation = Owner->GetActorLocation() + FVector(0, 0, 50.f);
+			LookRotation = Owner->GetActorRotation();
+		}
+
+		// 10미터(1000.0f) 앞까지 검사
+		FVector EndLocation = StartLocation + (LookRotation.Vector() * 2000.0f);
+
+		FHitResult HitResult;
+		FCollisionQueryParams QueryParams;
+		QueryParams.AddIgnoredActor(Owner);
+
+		// 레이 발사
+		bool bHit = GetWorld()->LineTraceSingleByChannel(
+			HitResult,
+			StartLocation,
+			EndLocation,
+			ECC_Visibility,
+			QueryParams);
+
+		// 맞은 물체가 타겟과 같은지 확인
+		if (bHit && HitResult.GetActor() == TargetEnemy)
+		{
+			bCheckTargetFound = true;
+		}
+
+		// [디버그 활성화]
+		//DrawDebugLine(GetWorld(), StartLocation, bHit ? HitResult.Location : EndLocation, bHit ? FColor::Green : FColor::Red, false, 0.2f);
 	}
 	else
 	{
@@ -60,6 +102,8 @@ void UPlayerRecorder::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 	// ==== (2) 공격 중인지 여부 ====
 	Data.bIsAttacking = bIsAttackingFlag;
 
+	// TargetFound 레이캐스트 결과 저장
+	Data.bTargetFound = bCheckTargetFound;
 
 	// 2. GetCurrentAction() Call on Playerpawn
 	// FString GetCurrentAction() (No input parameter, FString return)
@@ -97,9 +141,9 @@ void UPlayerRecorder::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 	Data.SubReward.Add(Safety);
 
 	//==============================================
-	// 2. �迭�� ����
+	
+	// 2. 배열에 저장
 	History.Add(Data);
-
 
 }
 
@@ -111,7 +155,7 @@ void UPlayerRecorder::EndPlay(const EEndPlayReason::Type EndPlayReason)
 
 void UPlayerRecorder::SaveToJson()
 {
-	// JSON �迭 ����
+	// JSON 배열 생성
 	TArray<TSharedPtr<FJsonValue>> JsonArray;
 
 	for (const FRecordData& Data : History)
@@ -121,7 +165,7 @@ void UPlayerRecorder::SaveToJson()
 		Row->SetNumberField("Time", Data.Time);
 		Row->SetNumberField("Health", Data.Health);
 
-		// ��ġ ����
+		// 위치 정보
 		TSharedPtr<FJsonObject> Pos = MakeShareable(new FJsonObject);
 		Pos->SetNumberField("X", Data.Location.X);
 		Pos->SetNumberField("Y", Data.Location.Y);
@@ -134,6 +178,8 @@ void UPlayerRecorder::SaveToJson()
 		// IsAttacking
 		Row->SetBoolField("IsAttacking", Data.bIsAttacking);
 
+		// TargetFound
+		Row->SetBoolField("TargetFound", Data.bTargetFound);
 
 		// action 
 		Row->SetStringField("Action", Data.Action);
@@ -151,22 +197,22 @@ void UPlayerRecorder::SaveToJson()
 
 
 
-		// �迭�� �߰�
+		// 배열에 추가
 		JsonArray.Add(MakeShareable(new FJsonValueObject(Row)));
 
 
 	}
 
-	// ���� ��ü
+	// 최종 객체
 	TSharedPtr<FJsonObject> Root = MakeShareable(new FJsonObject);
 	Root->SetArrayField("SessionData", JsonArray);
 
-	// ���ڿ��� ��ȯ
+	// 문자열로 변환
 	FString OutputString;
 	TSharedRef<TJsonWriter<>> Writer = TJsonWriterFactory<>::Create(&OutputString);
 	FJsonSerializer::Serialize(Root.ToSharedRef(), Writer);
 
-	// ���� ���� ���: ������Ʈ����/Saved/Recordings/
+	// 파일 저장 경로: 프로젝트폴더/Saved/Recordings/
 	FString FileName = FString::Printf(TEXT("Record_%s.json"), *FDateTime::Now().ToString(TEXT("%Y%m%d_%H%M%S")));
 	FString FilePath = FPaths::ProjectSavedDir() + "Recordings/" + FileName;
 
