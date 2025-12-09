@@ -1,0 +1,297 @@
+{
+  "AllNodes": {
+    "Modifiers": [
+      {
+        "name": "Inverter",
+        "description": "Inverts the result of the child node",
+        "parameters": {
+          "child": "AnyNode"
+        }
+      },
+      {
+        "name": "Repeat Until Failure",
+        "description": "Repeats until the child node fails",
+        "parameters": {
+          "child": "AnyNode"
+        }
+      },
+      {
+        "name": "Repeat Until Success",
+        "description": "Repeats until the child node succeeds",
+        "parameters": {
+          "child": "AnyNode"
+        }
+      },
+      {
+        "name": "Loop",
+        "description": "Loops the child node a given amount of times",
+        "parameters": {
+          "child": "AnyNode",
+          "times": "int"
+        }
+      }
+    ],
+    "Tasks": [
+      {
+        "name": "Run Node",
+        "description": "Runs the given node, which can be any node",
+        "parameters": {
+          "node": "AnyNode"
+        }
+      },
+      {
+        "name": "Talk",
+        "description": "Talks to the target given as parameter",
+        "parameters": {
+          "target": "Target",
+          "text": "string"
+        }
+      },
+      {
+        "name": "Attack",
+        "description": "Attacks the target given as parameter",
+        "parameters": "Target",
+        "returns": "void"
+      },
+      {
+        "name": "MoveTo",
+        "description": "Moves the agent to the target",
+        "parameters": {
+          "target": "Target"
+        },
+        "returns": "void"
+      },
+      {
+        "name": "IsDoorOpened",
+        "description": "Inspects a door to see if it is opened or not visually",
+        "parameters": {
+          "target": "Target"
+        },
+        "returns": "void"
+      },
+      {
+        "name": "CheckEntitiesInView",
+        "description": "Checks the entities in the agent's view. Returns a list of entities visible",
+        "parameters": {
+        },
+        "returns": "List of AnyNode"
+      },
+      {
+        "name": "MoveToNextWaypoint",
+        "description": "Moves the agent to the next waypoint. Returns false when there are no more waypoints",
+        "parameters": {
+          "room": "string"
+        },
+        "returns": "bool"
+      },
+      {
+        "name": "FindObjectInRoom",
+        "description": "Finds an object in the room",
+        "parameters": {
+          "room": "string",
+          "object": "string"
+        },
+        "returns": "Target"
+      },
+      {
+        "name": "PlayAnimation",
+        "description": "Plays the animation given as parameter, with the given loop and speed",
+        "parameters": {
+          "animation": "string",
+          "loop": "bool",
+          "speed": "float"
+        }
+      },
+      {
+        "name": "Wait",
+        "description": "Waits for a given amount of seconds",
+        "parameters": {
+          "time": "float"
+        },
+        "returns": "void"
+      },
+      {
+        "name": "SetTarget",
+        "description": "Sets the target to the given target",
+        "parameters": {
+          "target": "Target"
+        },
+        "returns": "void"
+      },
+      {
+        "name": "SetDestination",
+        "description": "Sets the destination to the given target",
+        "parameters": {
+          "target": "Target"
+        },
+        "returns": "void"
+      },
+      {
+        "name": "SetSpeed",
+        "description": "Sets the speed to the given value",
+        "parameters": {
+          "speed": "float"
+        },
+        "returns": "void"
+      },
+      {
+        "name": "SetRotation",
+        "description": "Sets the rotation to the given value",
+        "parameters": {
+          "rotation": "float"
+        },
+        "returns": "void"
+      }
+    ],
+    "Composites": [
+      {
+        "name": "Sequence",
+        "description": "Execute branches in order until one fails or all succeed",
+        "parameters": {
+          "children": [
+            "AnyNode"
+          ]
+        }
+      },
+      {
+        "name": "Selector",
+        "description": "Execute branches in order until one succeeds or all fail",
+        "parameters": {
+          "children": [
+            "AnyNode"
+          ]
+        }
+      },
+      {
+        "name": "Parallel",
+        "description": "Execute all branches in parallel",
+        "parameters": {
+          "children": [
+            "AnyNode"
+          ]
+        }
+      },
+      {
+        "name": "Random",
+        "description": "Execute a random branch",
+        "parameters": {
+          "children": [
+            "AnyNode"
+          ]
+        }
+      },
+      {
+        "name": "Conditional Branch",
+        "description": "Chooses one branch depending if the condition is true or false",
+        "parameters": {
+          "subject": "string",
+          "comparator": "string",
+          "value": "string",
+          "children": [
+            {
+              "name": "True",
+              "description": "Branch to follow if the condition is true",
+              "type": "AnyNode"
+            },
+            {
+              "name": "False",
+              "description": "Branch to follow if the condition is false",
+              "type": "AnyNode"
+            }
+          ]
+        }
+      }
+    ],
+    "Conditionals": [
+      {
+        "name": "IsTargetInRange",
+        "description": "Checks if the target is in range",
+        "parameters": {
+          "target": "Target",
+          "range": "float"
+        },
+        "returns": "bool"
+      },
+      {
+        "name": "IsTargetVisible",
+        "description": "Checks if the target is visible",
+        "parameters": {
+          "target": "Target"
+        },
+        "returns": "bool"
+      },
+      {
+        "name": "IsTargetAlive",
+        "description": "Checks if the target is alive",
+        "parameters": {
+          "target": "Target"
+        },
+        "returns": "bool"
+      },
+      {
+        "name": "IsDoorOpened",
+        "description": "Checks if the door is opened",
+        "parameters": {
+          "target": "Target"
+        },
+        "returns": "bool"
+      },
+      {
+        "name": "IsTargetNeutral",
+        "description": "Checks if the target is neutral",
+        "parameters": {
+          "target": "Target"
+        },
+        "returns": "bool"
+      },
+      {
+        "name": "IsTargetMoving",
+        "description": "Checks if the target is moving",
+        "parameters": {
+          "target": "Target"
+        },
+        "returns": "bool"
+      },
+      {
+        "name": "IsTargetStationary",
+        "description": "Checks if the target is stationary",
+        "parameters": {
+          "target": "Target"
+        },
+        "returns": "bool"
+      },
+      {
+        "name": "IsTargetAttacking",
+        "description": "Checks if the target is attacking",
+        "parameters": {
+          "target": "Target"
+        },
+        "returns": "bool"
+      },
+      {
+        "name": "IsTargetDefending",
+        "description": "Checks if the target is defending",
+        "parameters": {
+          "target": "Target"
+        },
+        "returns": "bool"
+      },
+      {
+        "name": "IsTargetCasting",
+        "description": "Checks if the target is casting",
+        "parameters": {
+          "target": "Target"
+        },
+        "returns": "bool"
+      },
+      {
+        "name": "IsTargetStunned",
+        "description": "Checks if the target is stunned",
+        "parameters": {
+          "target": "Target"
+        },
+        "returns": "bool"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "TrainingData": [
+    {
+      "instruction": [
+          "Description:",
+          "I want a behavior tree for an agent that has the following blackboard variables (memory):",
+          "name: string; speed: float; current_animation: string; current_room: string",
+          "",
+          "Behavior:",
+          "Create a behavior for a patrolling officer that performs the following actions.",
+          "",
+          "Choose one of the three branches below at random.",
+          "Branch 1: If a door is open, go and check it.",
+          "Branch 2: move between all patrolling waypoints in the room and then play an idle animation for 5 seconds",
+          "Branch 3: Find a chair in the room, wait on it for 2 minutes and check your phone.",
+          "",
+          "Nodes Discarded:",
+          "FindRoom",
+          "",
+          "Nodes Recommended:",
+          "RepeatUntilFailure",
+          "FindObject"
+      ],
+      "answer": {
+          "name": "Random",
+          "parameters": { "children": [
+            { "name": "Sequence", "parameters": { "children": [
+              { "name": "FindObjectInRoom", "parameters": { "room": "current room", "object": "door" } },
+              { "name": "IsDoorOpened", "parameters": { "target": "result of FindObjectInRoom" } },
+              { "name": "MoveTo", "parameters": { "target": "result of FindObjectInRoom" } }
+            ] } },
+            { "name": "Sequence", "parameters": { "children": [
+              { "name": "Repeat Until Failure", "parameters": { "child": { "name": "MoveToNextWaypoint", "parameters": { "room": "current room" } } } },
+              { "name": "PlayAnimation", "parameters": { "animation": "Idle", "loop": true, "speed": 1.0 } },
+              { "name": "Wait", "parameters": { "time": 5.0 } }
+            ] } },
+            { "name": "Sequence", "parameters": { "children": [
+              { "name": "FindObjectInRoom", "parameters": { "room": "current room", "object": "chair" } },
+              { "name": "MoveTo", "parameters": { "target": "result of FindObjectInRoom" } },
+              { "name": "Wait", "parameters": { "time": 120.0 } },
+              { "name": "CheckPhone", "description": "Agent checks their phone for updates or messages" }
+            ] } }
+          ] }
+        }
+    }
+  ]
+}
