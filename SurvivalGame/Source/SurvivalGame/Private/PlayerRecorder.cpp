@@ -142,78 +142,129 @@ void UPlayerRecorder::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 
 	// ====(3) Sub-Reward 계산===수정
 
-// 행동 목록
-	TArray<FString> Actions = { "Chase", "Patrol", "Idle", "Attack" };
+//// 행동 목록
+//	TArray<FString> Actions = { "Chase", "Patrol", "Idle", "Attack" };
+//
+//	// 최종 저장될 SubRewards
+//	TArray<TArray<float>> SubRewardList;
+//
+//	float Dist = Data.DistanceToEnemy;
+//	float NormDist = (TargetEnemy && Dist > 0) ? (1.0f - FMath::Clamp(Dist / 1000.f, 0.f, 1.f)) : 0.f;
+//
+//	bool Found = Data.bTargetFound;
+//	float AttackBonus = (bIsAttackingFlag && Found) ? 1.0f : 0.f;
+//
+//	// 기본 Safety 계산
+//	float BaseSafety = 0.f;
+//	if (Dist > 0)
+//	{
+//		if (Dist < 200.f)      BaseSafety = -1.0f;
+//		else if (Dist < 400.f) BaseSafety = -0.5f;
+//		else                   BaseSafety = 0.2f;
+//	}
+//
+//	// 각 Action별 계산
+//	for (const FString& Act : Actions)
+//	{
+//		float DamagePotential = 0.f;
+//		float Survivability = 0.f;
+//		float Safety = 0.f;
+//
+//		if (Act == "Chase")
+//		{
+//			DamagePotential = NormDist;
+//			if (!Found) DamagePotential *= 0.5f;   // 적을 못 봤으면 Chase 효과 반감
+//
+//			Survivability = 1.f - NormDist;
+//			Safety = BaseSafety - 0.2f;
+//		}
+//		else if (Act == "Patrol")
+//		{
+//			DamagePotential = Found ? 0.2f : 0.1f; // 적을 발견했다면 보상↑
+//			Survivability = 0.6f;
+//			Safety = 0.3f;
+//		}
+//		else if (Act == "Idle")
+//		{
+//			DamagePotential = 0.05f;
+//			Survivability = 0.5f;
+//			Safety = Found ? -0.2f : 0.4f; // 적을 보고 가만 있음 → 위험
+//		}
+//		else if (Act == "Attack")
+//		{
+//			if (!Found)
+//			{
+//				DamagePotential = -1.0f; // 못 보는데 공격 → 안 좋은 행동
+//			}
+//			else
+//			{
+//				DamagePotential = NormDist + AttackBonus * 1.5f;
+//			}
+//
+//			Survivability = -NormDist;
+//			Safety = BaseSafety - 0.5f;
+//		}
+//
+//		TArray<float> vec;
+//		vec.Add(DamagePotential*5);
+//		vec.Add(Survivability*5);
+//		vec.Add(Safety*5);
+//
+//		SubRewardList.Add(vec);
+//	}
+//
+//	Data.SubRewards = SubRewardList;
 
-	// 최종 저장될 SubRewards
-	TArray<TArray<float>> SubRewardList;
 
-	float Dist = Data.DistanceToEnemy;
-	float NormDist = (TargetEnemy && Dist > 0) ? (1.0f - FMath::Clamp(Dist / 1000.f, 0.f, 1.f)) : 0.f;
+float Dist = Data.DistanceToEnemy;
+float Found = Data.bTargetFound ? 1.0f : 0.0f;
+float IsAtk = Data.bIsAttacking ? 1.0f : 0.0f;
+float HP = Data.Health;
 
-	bool Found = Data.bTargetFound;
-	float AttackBonus = (bIsAttackingFlag && Found) ? 1.0f : 0.f;
+float Close = FMath::Clamp((600 - Dist) / 600.f, 0.f, 1.f);
+float Far = FMath::Clamp(Dist / 1200.f, 0.f, 1.f);
+float LowHP = FMath::Clamp((50 - HP) / 50.f, 0.f, 1.f);
 
-	// 기본 Safety 계산
-	float BaseSafety = 0.f;
-	if (Dist > 0)
+TArray<FString> Actions = { "Chase", "Patrol", "Idle", "Attack" };
+TArray<TArray<float>> SubRewardList;
+
+for (auto& Act : Actions)
+{
+	float d = 0.f, s = 0.f, safe = 0.f;
+
+	if (Act == "Chase")
 	{
-		if (Dist < 200.f)      BaseSafety = -1.0f;
-		else if (Dist < 400.f) BaseSafety = -0.5f;
-		else                   BaseSafety = 0.2f;
+		d = Found * Close * 2;
+		s = -Close;
+		safe = -0.5f * Close;
+	}
+	else if (Act == "Patrol")
+	{
+		d = (1 - Found) * 0.5f;
+		s = 0.5f + 0.3f * Far;
+		safe = 0.5f;
+	}
+	else if (Act == "Idle")
+	{
+		d = -Found * 0.5f;
+		s = LowHP * 2.0f;
+		safe = 0.2f + 0.3f * Far;
+	}
+	else if (Act == "Attack")
+	{
+		d = Found * Close * 3 - (1 - Found) * 2;
+		s = -Close - LowHP;
+		safe = -1.5f * Close;
 	}
 
-	// 각 Action별 계산
-	for (const FString& Act : Actions)
-	{
-		float DamagePotential = 0.f;
-		float Survivability = 0.f;
-		float Safety = 0.f;
+	TArray<float> vec;
+	vec.Add(d * 5);
+	vec.Add(s * 5);
+	vec.Add(safe * 5);
+	SubRewardList.Add(vec);
+}
 
-		if (Act == "Chase")
-		{
-			DamagePotential = NormDist;
-			if (!Found) DamagePotential *= 0.5f;   // 적을 못 봤으면 Chase 효과 반감
-
-			Survivability = 1.f - NormDist;
-			Safety = BaseSafety - 0.2f;
-		}
-		else if (Act == "Patrol")
-		{
-			DamagePotential = Found ? 0.2f : 0.1f; // 적을 발견했다면 보상↑
-			Survivability = 0.6f;
-			Safety = 0.3f;
-		}
-		else if (Act == "Idle")
-		{
-			DamagePotential = 0.05f;
-			Survivability = 0.5f;
-			Safety = Found ? -0.2f : 0.4f; // 적을 보고 가만 있음 → 위험
-		}
-		else if (Act == "Attack")
-		{
-			if (!Found)
-			{
-				DamagePotential = -1.0f; // 못 보는데 공격 → 안 좋은 행동
-			}
-			else
-			{
-				DamagePotential = NormDist + AttackBonus * 1.5f;
-			}
-
-			Survivability = -NormDist;
-			Safety = BaseSafety - 0.5f;
-		}
-
-		TArray<float> vec;
-		vec.Add(DamagePotential);
-		vec.Add(Survivability);
-		vec.Add(Safety);
-
-		SubRewardList.Add(vec);
-	}
-
-	Data.SubRewards = SubRewardList;
+Data.SubRewards = SubRewardList;
 
 
 	//==============================================
@@ -229,42 +280,132 @@ void UPlayerRecorder::EndPlay(const EEndPlayReason::Type EndPlayReason)
 	Super::EndPlay(EndPlayReason);
 }
 
+//void UPlayerRecorder::SaveToJson()
+//
+//
+//{
+//	// JSON 배열 생성
+//	TArray<TSharedPtr<FJsonValue>> JsonArray;
+//
+//	for (const FRecordData& Data : History)
+//	{
+//		TSharedPtr<FJsonObject> Row = MakeShareable(new FJsonObject);
+//
+//		Row->SetNumberField("Time", Data.Time);
+//		Row->SetNumberField("Health", Data.Health);
+//
+//		// 위치 정보
+//		TSharedPtr<FJsonObject> Pos = MakeShareable(new FJsonObject);
+//		Pos->SetNumberField("X", Data.Location.X);
+//		Pos->SetNumberField("Y", Data.Location.Y);
+//		Pos->SetNumberField("Z", Data.Location.Z);
+//		Row->SetObjectField("Position", Pos);
+//
+//		// DistanceToEnemy
+//		Row->SetNumberField("DistanceToEnemy", Data.DistanceToEnemy);
+//
+//		// IsAttacking
+//		Row->SetBoolField("IsAttacking", Data.bIsAttacking);
+//
+//		// TargetFound
+//		Row->SetBoolField("TargetFound", Data.bTargetFound);
+//
+//		// action 
+//		Row->SetStringField("Action", Data.Action);
+//
+//	
+//		// ---- SubRewards: 2D 배열로 쓰기 ----
+//		TArray<TSharedPtr<FJsonValue>> Outer;
+//
+//		for (const TArray<float>& SRRow : Data.SubRewards)
+//		{
+//			TArray<TSharedPtr<FJsonValue>> Inner;
+//			for (float v : SRRow)
+//				Inner.Add(MakeShareable(new FJsonValueNumber(v)));
+//
+//			Outer.Add(MakeShareable(new FJsonValueArray(Inner)));
+//		}
+//
+//		Row->SetArrayField("SubRewards", Outer);
+//
+//
+//		JsonArray.Add(MakeShareable(new FJsonValueObject(Row)));
+//	}
+//
+//	// 최종 객체
+//	TSharedPtr<FJsonObject> Root = MakeShareable(new FJsonObject);
+//	Root->SetArrayField("SessionData", JsonArray);
+//
+//	// 문자열로 변환
+//	FString OutputString;
+//	TSharedRef<TJsonWriter<>> Writer = TJsonWriterFactory<>::Create(&OutputString);
+//	FJsonSerializer::Serialize(Root.ToSharedRef(), Writer);
+//
+//	// 파일 저장 경로: 프로젝트폴더/Saved/Recordings/
+//	FString FileName = FString::Printf(TEXT("Record_%s.json"), *FDateTime::Now().ToString(TEXT("%Y%m%d_%H%M%S")));
+//	FString FilePath = FPaths::ProjectSavedDir() + "Recordings/" + FileName;
+//
+//	FFileHelper::SaveStringToFile(OutputString, *FilePath);
+//	}
+
 void UPlayerRecorder::SaveToJson()
-
-
 {
-	// JSON 배열 생성
-	TArray<TSharedPtr<FJsonValue>> JsonArray;
+	// ---- Root JSON 객체 ----
+	TSharedPtr<FJsonObject> Root = MakeShareable(new FJsonObject);
+
+	// (1) 목적 함수 개수 K
+	Root->SetNumberField(TEXT("K"), 3);
+
+	// (2) objective_ids
+	TArray<TSharedPtr<FJsonValue>> ObjIds;
+	ObjIds.Add(MakeShareable(new FJsonValueString(TEXT("DamagePotential"))));
+	ObjIds.Add(MakeShareable(new FJsonValueString(TEXT("Survivability"))));
+	ObjIds.Add(MakeShareable(new FJsonValueString(TEXT("Safety"))));
+	Root->SetArrayField(TEXT("objective_ids"), ObjIds);
+
+
+	// (3) steps 배열
+	TArray<TSharedPtr<FJsonValue>> StepsArray;
+
+	// 행동 목록 (Tick에서 SubRewards를 계산할 때 사용한 순서와 동일해야 함)
+	TArray<FString> Actions = { TEXT("Chase"), TEXT("Patrol"), TEXT("Idle"), TEXT("Attack") };
 
 	for (const FRecordData& Data : History)
 	{
-		TSharedPtr<FJsonObject> Row = MakeShareable(new FJsonObject);
+		TSharedPtr<FJsonObject> StepObj = MakeShareable(new FJsonObject);
 
-		Row->SetNumberField("Time", Data.Time);
-		Row->SetNumberField("Health", Data.Health);
+		// ---- state ----
+		TSharedPtr<FJsonObject> StateObj = MakeShareable(new FJsonObject);
+		StateObj->SetNumberField(TEXT("time"), Data.Time);
+		StateObj->SetNumberField(TEXT("x"), Data.Location.X);
+		StateObj->SetNumberField(TEXT("y"), Data.Location.Y);
+		StateObj->SetNumberField(TEXT("z"), Data.Location.Z);
+		StateObj->SetNumberField(TEXT("hp"), Data.Health);
+		StateObj->SetNumberField(TEXT("distance_to_enemy"), Data.DistanceToEnemy);
+		StateObj->SetBoolField(TEXT("is_attacking"), Data.bIsAttacking);
+		StateObj->SetBoolField(TEXT("target_found"), Data.bTargetFound);
 
-		// 위치 정보
-		TSharedPtr<FJsonObject> Pos = MakeShareable(new FJsonObject);
-		Pos->SetNumberField("X", Data.Location.X);
-		Pos->SetNumberField("Y", Data.Location.Y);
-		Pos->SetNumberField("Z", Data.Location.Z);
-		Row->SetObjectField("Position", Pos);
+		StepObj->SetObjectField(TEXT("state"), StateObj);
 
-		// DistanceToEnemy
-		Row->SetNumberField("DistanceToEnemy", Data.DistanceToEnemy);
 
-		// IsAttacking
-		Row->SetBoolField("IsAttacking", Data.bIsAttacking);
+		// ---- actions ----
+		TArray<TSharedPtr<FJsonValue>> ActionsArr;
+		for (const FString& Act : Actions)
+			ActionsArr.Add(MakeShareable(new FJsonValueString(Act)));
 
-		// TargetFound
-		Row->SetBoolField("TargetFound", Data.bTargetFound);
+		StepObj->SetArrayField(TEXT("actions"), ActionsArr);
 
-		// action 
-		Row->SetStringField("Action", Data.Action);
 
-	
-		// ---- SubRewards: 2D 배열로 쓰기 ----
-		TArray<TSharedPtr<FJsonValue>> Outer;
+		// ---- chosen_action_index ----
+		int32 ChosenIdx = Actions.IndexOfByKey(Data.Action);
+		if (ChosenIdx == INDEX_NONE)
+			ChosenIdx = 0;
+
+		StepObj->SetNumberField(TEXT("chosen_action_index"), ChosenIdx);
+
+
+		// ---- sub_rewards (2D 배열) ----
+		TArray<TSharedPtr<FJsonValue>> RewardsOuter;
 
 		for (const TArray<float>& SRRow : Data.SubRewards)
 		{
@@ -272,29 +413,33 @@ void UPlayerRecorder::SaveToJson()
 			for (float v : SRRow)
 				Inner.Add(MakeShareable(new FJsonValueNumber(v)));
 
-			Outer.Add(MakeShareable(new FJsonValueArray(Inner)));
+			RewardsOuter.Add(MakeShareable(new FJsonValueArray(Inner)));
 		}
 
-		Row->SetArrayField("SubRewards", Outer);
+		StepObj->SetArrayField(TEXT("sub_rewards"), RewardsOuter);
 
-
-		JsonArray.Add(MakeShareable(new FJsonValueObject(Row)));
+		// Step 추가
+		StepsArray.Add(MakeShareable(new FJsonValueObject(StepObj)));
 	}
 
-	// 최종 객체
-	TSharedPtr<FJsonObject> Root = MakeShareable(new FJsonObject);
-	Root->SetArrayField("SessionData", JsonArray);
+	Root->SetArrayField(TEXT("steps"), StepsArray);
 
-	// 문자열로 변환
+
+	// ---- 문자열 변환 ----
 	FString OutputString;
 	TSharedRef<TJsonWriter<>> Writer = TJsonWriterFactory<>::Create(&OutputString);
 	FJsonSerializer::Serialize(Root.ToSharedRef(), Writer);
 
-	// 파일 저장 경로: 프로젝트폴더/Saved/Recordings/
-	FString FileName = FString::Printf(TEXT("Record_%s.json"), *FDateTime::Now().ToString(TEXT("%Y%m%d_%H%M%S")));
-	FString FilePath = FPaths::ProjectSavedDir() + "Recordings/" + FileName;
+	// ---- 파일 저장 ----
+	FString FileName = FString::Printf(TEXT("IRLRecord_%s.json"),
+		*FDateTime::Now().ToString(TEXT("%Y%m%d_%H%M%S")));
+
+	FString FilePath = FPaths::ProjectSavedDir() + TEXT("Recordings/") + FileName;
 
 	FFileHelper::SaveStringToFile(OutputString, *FilePath);
-	}
+}
+
+
+
 
 

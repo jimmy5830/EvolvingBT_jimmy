@@ -1,12 +1,12 @@
 {
   "objective_ids": [
-    "DamageToPlayer",
-    "TimeAlive",
-    "TreeSizePenalty"
+    "DamagePotential",
+    "Survivability",
+    "Safety"
   ],
   "weights": [
-    1.0,
+    0.9048120975494385,
     0.0,
-    0.0
+    0.09518791735172272
   ]
 }

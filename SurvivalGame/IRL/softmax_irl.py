@@ -108,10 +108,10 @@ def main():
 
     # 데모 로드
     # tmp = json.load(open(args.trajectory, "r"))
-    demo_json = "trajectory.json"
+    demo_json = "IRLRecord_20251210_002257.json"
 
     lr = 0.05
-    steps=1000
+    steps=10000
     out_json = "estimated_weights_softmax.json"
 
     tmp = json.load(open(demo_json, "r"))
