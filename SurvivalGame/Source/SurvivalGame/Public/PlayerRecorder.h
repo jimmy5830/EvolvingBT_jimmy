@@ -98,6 +98,9 @@ struct FRecordData
 
     UPROPERTY()
     bool bIsAttacking;
+
+    UPROPERTY()
+    bool bTargetFound; // 타겟 발견 여부 저장
     
     UPROPERTY()
     float DistanceToEnemy;
@@ -139,7 +142,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Recorder")
     float CurrentHealth = 100.0f;
 
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Recorder")
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Recorder")
     AActor* TargetEnemy;
 
 
@@ -151,7 +154,8 @@ public:
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Recorder")
     bool bIsAttackingFlag = false;
 
-
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Recorder")
+    bool bTargetFound;
 
     UFUNCTION(BlueprintCallable, Category = "Recorder")
     void SetRecordedAction(const FString& NewAction) {
