@@ -109,8 +109,8 @@ struct FRecordData
     UPROPERTY()
     FString Action;
 
-    UPROPERTY()
-    TArray<float> SubReward;
+    
+    TArray<TArray<float>> SubRewards;
 };
 
 

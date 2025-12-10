@@ -1,0 +1,5990 @@
+{
+	"K": 3,
+	"objective_ids": [
+		"DamagePotential",
+		"Survivability",
+		"Safety"
+	],
+	"steps": [
+		{
+			"state":
+			{
+				"time": 0.016692601144313812,
+				"x": 608,
+				"y": -207.78118896484375,
+				"z": 271.00161743164062,
+				"hp": 100,
+				"distance_to_enemy": 224.38508605957031,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 7.7561492919921875, 4.487701416015625, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.512298583984375, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 0.30753502249717712,
+				"x": 608,
+				"y": -207.78118896484375,
+				"z": 201.6917724609375,
+				"hp": 100,
+				"distance_to_enemy": 222.07771301269531,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 7.7792224884033203, 4.4415545463562012, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.558444976806641, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 0.4319729208946228,
+				"x": 608,
+				"y": -207.78118896484375,
+				"z": 134.05500793457031,
+				"hp": 100,
+				"distance_to_enemy": 219.22544860839844,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 7.8077454566955566, 4.3845090866088867, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.615490913391113, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 0.62820374965667725,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 208.63494873046875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 7.9136505126953125, 4.1726994514465332, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.827301025390625, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 0.81703537702560425,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 216.57215881347656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 7.8342781066894531, 4.3314433097839355, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.668556213378906, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 1.0170431137084961,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 241.00563049316406,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 7.5899434089660645, 4.8201131820678711, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.179886817932129, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 1.2172073125839233,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 289.96875,
+				"is_attacking": true,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 7.1003127098083496, 5.7993745803833008, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -14.200625419616699, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 1.4172654151916504,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 350.53836059570312,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 6.4946165084838867, 7.0107674598693848, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -12.989233016967773, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 1.6172665357589722,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 417.688232421875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 5.8231172561645508, 8.3537654876708984, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -11.646234512329102, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 1.8172680139541626,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 488.14617919921875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 5.1185379028320312, 9.7629241943359375, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -10.237075805664062, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 2.0172698497772217,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 530.60296630859375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 4.6939702033996582, 10.612059593200684, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -9.3879404067993164, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 2.2172825336456299,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 575.578369140625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 4.2442159652709961, 11.511568069458008, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -8.4884319305419922, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 2.4172849655151367,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 627.5662841796875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 3.7243366241455078, 12.551326751708984, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -7.4486732482910156, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 2.6172871589660645,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 684.973388671875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 3.1502656936645508, 13.699468612670898, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.3005313873291016, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 2.817357063293457,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 746.5723876953125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 2.5342755317687988, 14.931448936462402, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -5.0685510635375977, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 3.0173721313476562,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 811.376220703125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 1.8862372636795044, 16.22752571105957, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -3.7724745273590088, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 3.2173933982849121,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 876.97039794921875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 1.2302958965301514, 17.539407730102539, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -2.4605917930603027, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 3.4173965454101562,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 858.7998046875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 1.4120012521743774, 17.175996780395508, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -2.8240025043487549, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 3.6173989772796631,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 823.015869140625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 1.7698407173156738, 16.460319519042969, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -3.5396814346313477, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 3.8174264430999756,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 793.70623779296875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 2.0629370212554932, 15.874126434326172, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -4.1258740425109863, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 4.0174288749694824,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 829.49822998046875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 2,
+			"sub_rewards": [
+				[ 1.70501708984375, 16.5899658203125, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -3.4100341796875, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 4.2174315452575684,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 909.07513427734375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0.9092479944229126, 18.181503295898438, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -1.8184959888458252, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 4.4174342155456543,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 988.10382080078125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0.11896133422851562, 19.762077331542969, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0.23792266845703125, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 4.6174368858337402,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1066.901611328125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 4.8174395561218262,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1145.8660888671875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 5.0174422264099121,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1224.9649658203125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 5.217444896697998,
+				"x": 608,
+				"y": -207.656005859375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1304.8055419921875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 5.4174556732177734,
+				"x": 616.56463623046875,
+				"y": -189.05209350585938,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1312.49755859375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 5.6174592971801758,
+				"x": 648.79217529296875,
+				"y": -119.04567718505859,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1256.0052490234375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 5.8174619674682617,
+				"x": 682.2454833984375,
+				"y": -46.375175476074219,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1199.7884521484375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 6.0174646377563477,
+				"x": 691.44561767578125,
+				"y": -26.389850616455078,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1184.8077392578125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 6.2174673080444336,
+				"x": 703.5833740234375,
+				"y": -3.9063968658447266,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1168.9381103515625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 6.4174699783325195,
+				"x": 748.373779296875,
+				"y": 60.639007568359375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1129.8612060546875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 6.6174726486206055,
+				"x": 800.08587646484375,
+				"y": 121.64432525634766,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1101.6241455078125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 6.8174819946289062,
+				"x": 854.21514892578125,
+				"y": 180.55331420898438,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1081.69384765625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 7.0174846649169922,
+				"x": 909.37054443359375,
+				"y": 238.50144958496094,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1068.795654296875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 7.2174873352050781,
+				"x": 960.967041015625,
+				"y": 299.43850708007812,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1029.9715576171875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 7.4174900054931641,
+				"x": 983.850830078125,
+				"y": 374.96414184570312,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 936.9036865234375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0.63096284866333008, 18.738075256347656, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -1.2619256973266602, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 7.61749267578125,
+				"x": 964.93536376953125,
+				"y": 452.25625610351562,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 869.26068115234375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 1.3073927164077759, 17.385213851928711, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -2.6147854328155518, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 7.8174953460693359,
+				"x": 934.38800048828125,
+				"y": 526.19189453125,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 873.10882568359375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 1.2689113616943359, 17.462177276611328, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -2.5378227233886719, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 8.0175457000732422,
+				"x": 899.547607421875,
+				"y": 598.14959716796875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 883.38275146484375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 1.1661720275878906, 17.667655944824219, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -2.3323440551757812, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 8.2175464630126953,
+				"x": 861.64166259765625,
+				"y": 647.0477294921875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 905.6851806640625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0.94314754009246826, 18.113704681396484, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -1.8862950801849365, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 8.4175863265991211,
+				"x": 861.64166259765625,
+				"y": 647.0477294921875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 982.112060546875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0.17887890338897705, 19.642242431640625, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0.3577578067779541, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 8.6177082061767578,
+				"x": 861.64166259765625,
+				"y": 647.0477294921875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1059.1007080078125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 8.817713737487793,
+				"x": 861.64166259765625,
+				"y": 647.0477294921875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1136.4681396484375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 9.0177145004272461,
+				"x": 861.64166259765625,
+				"y": 647.0477294921875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1181.8780517578125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 9.2177152633666992,
+				"x": 861.64166259765625,
+				"y": 647.0477294921875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1206.7073974609375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 9.4177560806274414,
+				"x": 833.8270263671875,
+				"y": 661.35589599609375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1205.23876953125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 9.6177539825439453,
+				"x": 759.628662109375,
+				"y": 689.96923828125,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1160.291259765625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 9.8177661895751953,
+				"x": 683.27728271484375,
+				"y": 713.86822509765625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 1082.1561279296875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 0, 20, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 10.01777458190918,
+				"x": 605.794189453125,
+				"y": 733.621337890625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 969.2371826171875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 0.30762791633605957, 19.384744644165039, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -0.61525583267211914, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 10.217779159545898,
+				"x": 526.1927490234375,
+				"y": 740.76617431640625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 865.194580078125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 1.3480538129806519, 17.303892135620117, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -2.6961076259613037, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 10.42316722869873,
+				"x": 446.3057861328125,
+				"y": 746.62103271484375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 793.8607177734375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.0613927841186523, 15.877214431762695, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -4.1227855682373047, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 10.623167037963867,
+				"x": 367.0032958984375,
+				"y": 755.35821533203125,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 738.4603271484375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.6153964996337891, 14.769207000732422, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -5.2307929992675781, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 10.823169708251953,
+				"x": 287.29537963867188,
+				"y": 749.649169921875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 700.144775390625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.9985518455505371, 14.002896308898926, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -5.9971036911010742, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 11.023170471191406,
+				"x": 210.83651733398438,
+				"y": 727.1929931640625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 685.86529541015625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.1413464546203613, 13.717307090759277, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.2826929092407227, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 11.223185539245605,
+				"x": 139.59376525878906,
+				"y": 690.80816650390625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 695.516845703125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.0448312759399414, 13.910337448120117, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.0896625518798828, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 11.423186302185059,
+				"x": 69.101882934570312,
+				"y": 652.97967529296875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 715.6116943359375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.8438825607299805, 14.312234878540039, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -5.6877651214599609, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 11.623185157775879,
+				"x": -3.0110383033752441,
+				"y": 618.53118896484375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 740.3131103515625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.5968682765960693, 14.806262969970703, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -5.1937365531921387, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 11.823209762573242,
+				"x": -82.028961181640625,
+				"y": 610.7535400390625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 746.01849365234375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.5398147106170654, 14.920370101928711, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -5.0796294212341309, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 12.023208618164062,
+				"x": -157.90945434570312,
+				"y": 633.68817138671875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 729.16485595703125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.7083511352539062, 14.583297729492188, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -5.4167022705078125, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 12.22321605682373,
+				"x": -224.60160827636719,
+				"y": 677.83111572265625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 697.90948486328125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.020904541015625, 13.95819091796875, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.04180908203125, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 12.423215866088867,
+				"x": -280.26699829101562,
+				"y": 717.33209228515625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 675.45611572265625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.2454383373260498, 13.509122848510742, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.4908766746520996, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 12.623218536376953,
+				"x": -280.602294921875,
+				"y": 717.57086181640625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 675.3387451171875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.2466120719909668, 13.506775856018066, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.4932241439819336, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 12.823219299316406,
+				"x": -280.602294921875,
+				"y": 717.57086181640625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 675.3387451171875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 3.2466120719909668, 13.506775856018066, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.4932241439819336, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 13.023551940917969,
+				"x": -280.602294921875,
+				"y": 717.57086181640625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 675.3387451171875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 3.2466120719909668, 13.506775856018066, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.4932241439819336, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 13.223560333251953,
+				"x": -281.99151611328125,
+				"y": 718.5623779296875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 674.8526611328125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 3.2514734268188477, 13.497053146362305, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.5029468536376953, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 13.423561096191406,
+				"x": -327.24078369140625,
+				"y": 751.279052734375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 660.85186767578125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 3.3914809226989746, 13.217038154602051, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.7829618453979492, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 13.623560905456543,
+				"x": -369.9842529296875,
+				"y": 816.593994140625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 621.65130615234375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 3.7834863662719727, 12.433027267456055, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -7.5669727325439453, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 13.823576927185059,
+				"x": -371.92843627929688,
+				"y": 896.395263671875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 554.849853515625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 4.4515013694763184, 11.096997261047363, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -8.9030027389526367, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 14.023577690124512,
+				"x": -366.00347900390625,
+				"y": 976.16485595703125,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 487.01760864257812,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 5.1298236846923828, 9.7403526306152344, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -10.259647369384766, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 14.22358226776123,
+				"x": -354.29849243164062,
+				"y": 1055.2918701171875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 419.861083984375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 5.801389217376709, 8.397221565246582, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -11.602778434753418, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 14.423582077026367,
+				"x": -343.58096313476562,
+				"y": 1134.5556640625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 358.70785522460938,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 6.4129209518432617, 7.1741580963134766, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -12.825841903686523, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 14.62358283996582,
+				"x": -333.57696533203125,
+				"y": 1213.8858642578125,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 306.95742797851562,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 6.9304251670837402, 6.1391496658325195, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -13.86085033416748, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 14.823581695556641,
+				"x": -294.62933349609375,
+				"y": 1282.8740234375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 244.26370239257812,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 7.5573630332946777, 4.8852739334106445, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.114726066589355, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 15.023581504821777,
+				"x": -241.42385864257812,
+				"y": 1342.607666015625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 180.29566955566406,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 8.1970424652099609, 3.6059141159057617, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -16.394084930419922, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 15.223591804504395,
+				"x": -235.56559753417969,
+				"y": 1348.99609375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 135.02983093261719,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 8.6497011184692383, 2.7005970478057861, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -17.299402236938477, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 15.423589706420898,
+				"x": -235.56559753417969,
+				"y": 1348.99609375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 79.592933654785156,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 9.204071044921875, 1.5918588638305664, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.40814208984375, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 15.623636245727539,
+				"x": -235.56559753417969,
+				"y": 1348.99609375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 84.624710083007812,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 9.1537532806396484, 1.6924941539764404, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.307506561279297, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 15.823636054992676,
+				"x": -235.56559753417969,
+				"y": 1348.99609375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 146.4022216796875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 8.5359773635864258, 2.9280447959899902, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -17.071954727172852, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 16.023635864257812,
+				"x": -235.56559753417969,
+				"y": 1348.99609375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 222.51742553710938,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 7.7748255729675293, 4.4503488540649414, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.549651145935059, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 16.2236328125,
+				"x": -235.56559753417969,
+				"y": 1348.99609375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 300.65716552734375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 6.9934282302856445, 6.0131430625915527, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -13.986856460571289, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 16.423629760742188,
+				"x": -235.56559753417969,
+				"y": 1348.99609375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 378.54714965820312,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 6.2145280838012695, 7.5709438323974609, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -12.429056167602539, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 16.623626708984375,
+				"x": -235.56559753417969,
+				"y": 1348.99609375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 410.36318969726562,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 5.8963680267333984, 8.2072639465332031, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -11.792736053466797, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 16.823623657226562,
+				"x": -235.56559753417969,
+				"y": 1348.99609375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 423.47366333007812,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 1,
+			"sub_rewards": [
+				[ 5.7652626037597656, 8.4694747924804688, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -11.530525207519531, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 17.02362060546875,
+				"x": -235.56559753417969,
+				"y": 1348.99609375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 450.62429809570312,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 5.4937562942504883, 9.0124874114990234, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -10.987512588500977, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 17.223667144775391,
+				"x": -235.56559753417969,
+				"y": 1348.99609375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 489.49459838867188,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 5.1050539016723633, 9.7898921966552734, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -10.210107803344727, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 17.423664093017578,
+				"x": -237.73768615722656,
+				"y": 1346.363037109375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 537.01385498046875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.6298608779907227, 10.740278244018555, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -9.2597217559814453, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 17.623703002929688,
+				"x": -275.7357177734375,
+				"y": 1298.884033203125,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 591.76190185546875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.0823802947998047, 11.835239410400391, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -8.1647605895996094, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 17.823848724365234,
+				"x": -318.7772216796875,
+				"y": 1231.605224609375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 658.89617919921875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.4110379219055176, 13.177924156188965, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.8220758438110352, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 18.023847579956055,
+				"x": -330.60775756835938,
+				"y": 1153.580810546875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 633.45843505859375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.6654157638549805, 12.669168472290039, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -7.3308315277099609, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 18.224054336547852,
+				"x": -310.99728393554688,
+				"y": 1076.035888671875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 625.40924072265625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.7459075450897217, 12.508184432983398, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -7.4918150901794434, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 18.424053192138672,
+				"x": -285.47027587890625,
+				"y": 1000.2185668945312,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 648.27154541015625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.5172843933105469, 12.965431213378906, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -7.0345687866210938, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 18.6241455078125,
+				"x": -259.3671875,
+				"y": 924.55645751953125,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 702.85772705078125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.9714226722717285, 14.057154655456543, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -5.942845344543457, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 18.824186325073242,
+				"x": -232.69607543945312,
+				"y": 849.1217041015625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 782.39849853515625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.1760149002075195, 15.647970199584961, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -4.3520298004150391, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 19.02418327331543,
+				"x": -190.70697021484375,
+				"y": 781.5130615234375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 864.1546630859375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 1.3584530353546143, 17.28309440612793, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -2.7169060707092285, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 19.224180221557617,
+				"x": -126.60734558105469,
+				"y": 734.885009765625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 873.33984375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 1.2666010856628418, 17.466796875, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -2.5332021713256836, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 19.424200057983398,
+				"x": -48.779155731201172,
+				"y": 718.0528564453125,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 839.2159423828125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 1.6078400611877441, 16.784320831298828, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -3.2156801223754883, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 19.624197006225586,
+				"x": 31.092124938964844,
+				"y": 718.7125244140625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 795.35186767578125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.046480655670166, 15.907038688659668, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -4.092961311340332, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 19.824369430541992,
+				"x": 107.27374267578125,
+				"y": 741.993896484375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 738.627197265625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.6137275695800781, 14.772544860839844, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -5.2274551391601562, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 20.024379730224609,
+				"x": 173.82838439941406,
+				"y": 786.19403076171875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 670.7264404296875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.2927350997924805, 13.414529800415039, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.5854701995849609, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 20.224525451660156,
+				"x": 235.09700012207031,
+				"y": 837.69622802734375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 600.5787353515625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.9942121505737305, 12.011575698852539, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -7.9884243011474609, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 20.424522399902344,
+				"x": 292.52310180664062,
+				"y": 893.3795166015625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 530.20166015625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.6979832649230957, 10.604033470153809, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -9.3959665298461914, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 20.624534606933594,
+				"x": 348.20974731445312,
+				"y": 950.82452392578125,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 461.54672241210938,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 5.3845319747924805, 9.2309360504150391, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -10.769063949584961, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 20.824666976928711,
+				"x": 407.986083984375,
+				"y": 1004.0449829101562,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 401.08636474609375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 5.9891362190246582, 8.0217275619506836, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -11.978272438049316, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 21.024663925170898,
+				"x": 457.30169677734375,
+				"y": 1066.53076171875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 338.51458740234375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 6.6148543357849121, 6.7702913284301758, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -13.229708671569824, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 21.224660873413086,
+				"x": 493.46990966796875,
+				"y": 1137.8272705078125,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 272.92205810546875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 7.2707796096801758, 5.4584407806396484, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -14.541559219360352, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 21.424657821655273,
+				"x": 521.75103759765625,
+				"y": 1212.6141357421875,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 210.64717102050781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 7.8935284614562988, 4.2129430770874023, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.787056922912598, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 21.624654769897461,
+				"x": 532.33990478515625,
+				"y": 1253.2496337890625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 180.03131103515625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 8.1996870040893555, 3.6006259918212891, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -16.399374008178711, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 21.824651718139648,
+				"x": 532.33990478515625,
+				"y": 1253.2496337890625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 180.03131103515625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 8.1996870040893555, 3.6006259918212891, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -16.399374008178711, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 22.024868011474609,
+				"x": 532.33990478515625,
+				"y": 1253.2496337890625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 180.03131103515625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 8.1996870040893555, 3.6006259918212891, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -16.399374008178711, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 22.224899291992188,
+				"x": 532.33990478515625,
+				"y": 1253.2496337890625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 180.03131103515625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 8.1996870040893555, 3.6006259918212891, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -16.399374008178711, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 22.424896240234375,
+				"x": 532.33990478515625,
+				"y": 1253.2496337890625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 180.03131103515625,
+				"is_attacking": false,
+				"target_found": true
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 16.399374008178711, 3.6006259918212891, -24 ],
+				[ 4, 12, 6 ],
+				[ 1, 10, -4 ],
+				[ 16.399374008178711, -16.399374008178711, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 22.626262664794922,
+				"x": 532.33990478515625,
+				"y": 1253.2496337890625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 180.03131103515625,
+				"is_attacking": false,
+				"target_found": true
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 16.399374008178711, 3.6006259918212891, -24 ],
+				[ 4, 12, 6 ],
+				[ 1, 10, -4 ],
+				[ 16.399374008178711, -16.399374008178711, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 22.826259613037109,
+				"x": 532.33990478515625,
+				"y": 1253.2496337890625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 180.03131103515625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 8.1996870040893555, 3.6006259918212891, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -16.399374008178711, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 23.026256561279297,
+				"x": 532.33990478515625,
+				"y": 1253.2496337890625,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 180.03131103515625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 8.1996870040893555, 3.6006259918212891, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -16.399374008178711, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 23.226253509521484,
+				"x": 518.392822265625,
+				"y": 1281.2578125,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 148.98677062988281,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 8.5101327896118164, 2.9797351360321045, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -17.020265579223633, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 23.426301956176758,
+				"x": 487.2208251953125,
+				"y": 1354.44970703125,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 72.655540466308594,
+				"is_attacking": false,
+				"target_found": true
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 18.54688835144043, 1.4531111717224121, -24 ],
+				[ 4, 12, 6 ],
+				[ 1, 10, -4 ],
+				[ 18.54688835144043, -18.54688835144043, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 23.626325607299805,
+				"x": 502.29937744140625,
+				"y": 1408.4085693359375,
+				"z": 87.4351806640625,
+				"hp": 100,
+				"distance_to_enemy": 68.093765258789062,
+				"is_attacking": false,
+				"target_found": true
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 18.638124465942383, 1.3618755340576172, -24 ],
+				[ 4, 12, 6 ],
+				[ 1, 10, -4 ],
+				[ 18.638124465942383, -18.638124465942383, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 23.826322555541992,
+				"x": 500.741455078125,
+				"y": 1417.8824462890625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 80.369216918945312,
+				"is_attacking": true,
+				"target_found": true
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 18.392616271972656, 1.6073846817016602, -24 ],
+				[ 4, 12, 6 ],
+				[ 1, 10, -4 ],
+				[ 48.392616271972656, -18.392616271972656, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 24.026695251464844,
+				"x": 500.741455078125,
+				"y": 1417.8824462890625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 145.01358032226562,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 8.5498638153076172, 2.9002714157104492, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -17.099727630615234, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 24.226692199707031,
+				"x": 500.741455078125,
+				"y": 1417.8824462890625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 220.68312072753906,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.7931690216064453, 4.4136619567871094, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.586338043212891, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 24.426689147949219,
+				"x": 500.741455078125,
+				"y": 1417.8824462890625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 298.619140625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.0138082504272461, 5.9723830223083496, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -14.027616500854492, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 24.626686096191406,
+				"x": 500.741455078125,
+				"y": 1417.8824462890625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 377.42007446289062,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 6.225799560546875, 7.5484013557434082, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -12.45159912109375, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 24.826683044433594,
+				"x": 500.741455078125,
+				"y": 1417.8824462890625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 456.638427734375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 5.4336156845092773, 9.1327686309814453, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -10.867231369018555, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 25.026679992675781,
+				"x": 500.741455078125,
+				"y": 1417.8824462890625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 534.1300048828125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 4.6586995124816895, 10.682600975036621, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -9.3173990249633789, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 25.226680755615234,
+				"x": 500.741455078125,
+				"y": 1417.8824462890625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 575.9794921875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 4.2402048110961914, 11.519590377807617, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -8.4804096221923828, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 25.42668342590332,
+				"x": 500.741455078125,
+				"y": 1417.8824462890625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 621.9288330078125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 3.7807111740112305, 12.438577651977539, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -7.5614223480224609, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 25.626680374145508,
+				"x": 500.741455078125,
+				"y": 1417.8824462890625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 674.26824951171875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 3.257317066192627, 13.485365867614746, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.5146341323852539, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 25.826677322387695,
+				"x": 500.741455078125,
+				"y": 1417.8824462890625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 731.62847900390625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 2.6837146282196045, 14.632570266723633, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -5.367429256439209, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 26.026693344116211,
+				"x": 500.741455078125,
+				"y": 1417.8824462890625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 792.92608642578125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 2.0707387924194336, 15.858522415161133, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -4.1414775848388672, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 26.226720809936523,
+				"x": 500.741455078125,
+				"y": 1417.8824462890625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 857.31573486328125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 1.426842212677002, 17.146316528320312, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -2.8536844253540039, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 26.426725387573242,
+				"x": 500.741455078125,
+				"y": 1417.8824462890625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 890.24945068359375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 1.0975050926208496, 17.804988861083984, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -2.1950101852416992, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 26.626735687255859,
+				"x": 498.56314086914062,
+				"y": 1412.6246337890625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 846.25299072265625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 1.5374696254730225, 16.925060272216797, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -3.0749392509460449, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 26.826732635498047,
+				"x": 474.60165405273438,
+				"y": 1352.0057373046875,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 773.22564697265625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.2677433490753174, 15.464513778686523, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -4.5354866981506348, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 27.026729583740234,
+				"x": 454.0220947265625,
+				"y": 1274.7486572265625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 722.885986328125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.7711396217346191, 14.457720756530762, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -5.5422792434692383, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 27.226749420166016,
+				"x": 437.4876708984375,
+				"y": 1196.4661865234375,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 692.7559814453125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.0724401473999023, 13.855119705200195, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.1448802947998047, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 27.426746368408203,
+				"x": 420.87655639648438,
+				"y": 1118.208984375,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 629.07379150390625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.7092618942260742, 12.581476211547852, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -7.4185237884521484, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 27.626745223999023,
+				"x": 404.63821411132812,
+				"y": 1039.8731689453125,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 572.38055419921875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.2761940956115723, 11.447611808776855, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -8.5523881912231445, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 27.827268600463867,
+				"x": 384.08572387695312,
+				"y": 962.392333984375,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 560.7269287109375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.392730712890625, 11.21453857421875, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -8.78546142578125, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 28.027276992797852,
+				"x": 347.85971069335938,
+				"y": 891.50238037109375,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 580.69598388671875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.1930398941040039, 11.613920211791992, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -8.3860797882080078, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 28.227273941040039,
+				"x": 286.50509643554688,
+				"y": 840.8720703125,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 579.16156005859375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.2083840370178223, 11.583231925964355, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -8.4167680740356445, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 28.427278518676758,
+				"x": 215.726806640625,
+				"y": 803.6629638671875,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 572.17529296875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.2782468795776367, 11.443506240844727, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -8.5564937591552734, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 28.627452850341797,
+				"x": 142.37435913085938,
+				"y": 771.560546875,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 570.61956787109375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.2938041687011719, 11.412391662597656, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -8.5876083374023438, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 28.827491760253906,
+				"x": 69.055679321289062,
+				"y": 739.51788330078125,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 580.165771484375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.1983418464660645, 11.603316307067871, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -8.3966836929321289, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 29.027488708496094,
+				"x": -2.8539881706237793,
+				"y": 704.47637939453125,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 603.43536376953125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.9656460285186768, 12.068708419799805, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -7.9312920570373535, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 29.227489471435547,
+				"x": -73.803306579589844,
+				"y": 667.5120849609375,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 637.88262939453125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.6211733818054199, 12.75765323638916, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -7.2423467636108398, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 29.427486419677734,
+				"x": -149.04107666015625,
+				"y": 641.47320556640625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 669.762451171875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.3023750782012939, 13.39525032043457, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.6047501564025879, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 29.627483367919922,
+				"x": -226.75279235839844,
+				"y": 654.87030029296875,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 671.507080078125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.2849287986755371, 13.430142402648926, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.5698575973510742, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 29.827634811401367,
+				"x": -292.0703125,
+				"y": 700.66455078125,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 647.7374267578125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.5226254463195801, 12.95474910736084, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -7.0452508926391602, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 30.027631759643555,
+				"x": -347.03182983398438,
+				"y": 758.7572021484375,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 617.47900390625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.8252096176147461, 12.349580764770508, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -7.6504192352294922, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 30.227634429931641,
+				"x": -396.884033203125,
+				"y": 821.31365966796875,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 589.89434814453125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.1010565757751465, 11.797886848449707, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -8.202113151550293, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 30.427631378173828,
+				"x": -447.2344970703125,
+				"y": 883.44940185546875,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 572.8946533203125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.2710533142089844, 11.457893371582031, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -8.5421066284179688, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 30.627632141113281,
+				"x": -497.47998046875,
+				"y": 945.5819091796875,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 566.6953125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.3330469131469727, 11.333906173706055, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -8.6660938262939453, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 30.827629089355469,
+				"x": -521.468505859375,
+				"y": 1020.8464965820312,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 542.46087646484375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.5753908157348633, 10.849218368530273, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -9.1507816314697266, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 31.027626037597656,
+				"x": -509.18936157226562,
+				"y": 1099.59716796875,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 494.46011352539062,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 5.0553989410400391, 9.8892021179199219, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -10.110797882080078, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 31.227630615234375,
+				"x": -474.84796142578125,
+				"y": 1171.422119140625,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 436.3680419921875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 5.636319637298584, 8.727360725402832, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -11.272639274597168, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 31.427627563476562,
+				"x": -425.81719970703125,
+				"y": 1234.5859375,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 341.8538818359375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 6.5814614295959473, 6.8370771408081055, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -13.162922859191895, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 31.62762451171875,
+				"x": -381.33572387695312,
+				"y": 1277.668701171875,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 214.31980895996094,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 7.8568019866943359, 4.2863965034484863, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.713603973388672, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 31.827621459960938,
+				"x": -381.33572387695312,
+				"y": 1277.668701171875,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 137.74649047851562,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 8.6225347518920898, 2.7549302577972412, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -17.24506950378418, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 32.027687072753906,
+				"x": -365.783935546875,
+				"y": 1281.1876220703125,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 104.10478973388672,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 8.9589519500732422, 2.0820963382720947, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -17.917903900146484, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 32.227684020996094,
+				"x": -291.35443115234375,
+				"y": 1282.303955078125,
+				"z": 87.435111999511719,
+				"hp": 100,
+				"distance_to_enemy": 148.00888061523438,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 8.5199108123779297, 2.9601776599884033, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -17.039821624755859, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 32.427680969238281,
+				"x": -234.50994873046875,
+				"y": 1258.3037109375,
+				"z": 87.435020446777344,
+				"hp": 100,
+				"distance_to_enemy": 206.58250427246094,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 7.9341745376586914, 4.1316509246826172, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.868349075317383, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 32.627685546875,
+				"x": -235.13778686523438,
+				"y": 1257.6876220703125,
+				"z": 87.435020446777344,
+				"hp": 100,
+				"distance_to_enemy": 282.84298706054688,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 7.17156982421875, 5.6568598747253418, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -14.3431396484375, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 32.827812194824219,
+				"x": -245.32502746582031,
+				"y": 1235.97607421875,
+				"z": 87.435035705566406,
+				"hp": 100,
+				"distance_to_enemy": 303.48464965820312,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 6.9651532173156738, 6.0696935653686523, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -13.930306434631348, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 33.027835845947266,
+				"x": -245.33291625976562,
+				"y": 1160.7093505859375,
+				"z": 87.435035705566406,
+				"hp": 100,
+				"distance_to_enemy": 252.65032958984375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 7.4734964370727539, 5.0530076026916504, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -14.946992874145508, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 33.227832794189453,
+				"x": -245.33291625976562,
+				"y": 1080.715576171875,
+				"z": 87.435050964355469,
+				"hp": 100,
+				"distance_to_enemy": 243.11616516113281,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 7.5688385963439941, 4.8623228073120117, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.137677192687988, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 33.427829742431641,
+				"x": -245.33291625976562,
+				"y": 1065.3829345703125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 304.12826538085938,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 6.9587173461914062, 6.0825657844543457, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -13.917434692382812, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 33.627826690673828,
+				"x": -245.32827758789062,
+				"y": 1044.961181640625,
+				"z": 87.43505859375,
+				"hp": 100,
+				"distance_to_enemy": 371.83819580078125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 6.2816181182861328, 7.4367642402648926, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -12.563236236572266, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 33.827835083007812,
+				"x": -249.0174560546875,
+				"y": 968.1697998046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 442.3121337890625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 5.576878547668457, 8.8462429046630859, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -11.153757095336914, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 34.02783203125,
+				"x": -269.62661743164062,
+				"y": 890.92022705078125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 544.9791259765625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.550208568572998, 10.899582862854004, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -9.1004171371459961, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 34.227832794189453,
+				"x": -288.37542724609375,
+				"y": 813.40216064453125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 612.61285400390625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.873870849609375, 12.25225830078125, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -7.74774169921875, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 34.427833557128906,
+				"x": -263.00006103515625,
+				"y": 739.3975830078125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 675.1131591796875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.2488679885864258, 13.502264022827148, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.4977359771728516, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 34.627964019775391,
+				"x": -204.50126647949219,
+				"y": 685.145751953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 724.58349609375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.7541649341583252, 14.491670608520508, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -5.5083298683166504, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 34.827972412109375,
+				"x": -128.53250122070312,
+				"y": 669.169189453125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 753.6463623046875,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.463536262512207, 15.072927474975586, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -4.9270725250244141, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 35.027984619140625,
+				"x": -57.18634033203125,
+				"y": 704.42236328125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 756.42333984375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.4357664585113525, 15.128467559814453, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -4.8715329170227051, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 35.227981567382812,
+				"x": 4.3460516929626465,
+				"y": 755.49200439453125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 756.112548828125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 2.4388742446899414, 15.122251510620117, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -4.8777484893798828, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 35.427978515625,
+				"x": 63.918186187744141,
+				"y": 808.88922119140625,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 692.3033447265625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.0769662857055664, 13.846067428588867, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -6.1539325714111328, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 35.627975463867188,
+				"x": 127.65235900878906,
+				"y": 856.95074462890625,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 619.19232177734375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 3.8080763816833496, 12.383847236633301, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -7.6161527633666992, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 35.828174591064453,
+				"x": 200.13661193847656,
+				"y": 890.913818359375,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 557.370361328125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.4262962341308594, 11.147407531738281, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -8.8525924682617188, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 36.028171539306641,
+				"x": 273.63388061523438,
+				"y": 922.5025634765625,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 502.722412109375,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 4.9727754592895508, 10.054449081420898, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -9.9455509185791016, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 36.228168487548828,
+				"x": 339.05642700195312,
+				"y": 967.75396728515625,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 443.48297119140625,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 5.5651702880859375, 8.869659423828125, 0 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -11.130340576171875, -6 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 36.429069519042969,
+				"x": 390.27325439453125,
+				"y": 1029.486572265625,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 375.78518676757812,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 6.2421474456787109, 7.5157046318054199, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -12.484294891357422, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 36.629066467285156,
+				"x": 427.9735107421875,
+				"y": 1099.93701171875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 304.56719970703125,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 6.9543275833129883, 6.0913443565368652, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -13.908655166625977, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 36.829494476318359,
+				"x": 455.3936767578125,
+				"y": 1175.188720703125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 232.29580688476562,
+				"is_attacking": false,
+				"target_found": true
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 15.354084014892578, 4.6459159851074219, -14 ],
+				[ 4, 12, 6 ],
+				[ 1, 10, -4 ],
+				[ 15.354084014892578, -15.354084014892578, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 37.029491424560547,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": true
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 15.991216659545898, 4.0087833404541016, -14 ],
+				[ 4, 12, 6 ],
+				[ 1, 10, -4 ],
+				[ 15.991216659545898, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 37.229488372802734,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": true
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 15.991216659545898, 4.0087833404541016, -14 ],
+				[ 4, 12, 6 ],
+				[ 1, 10, -4 ],
+				[ 15.991216659545898, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 37.429485321044922,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": true,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 37.629482269287109,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 37.829479217529297,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 38.029476165771484,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 0,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 38.229473114013672,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 38.429470062255859,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 38.629467010498047,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 38.829463958740234,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 39.029460906982422,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 39.229457855224609,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 39.429454803466797,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 39.629451751708984,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 39.829448699951172,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 40.029453277587891,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": true,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 40.229450225830078,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 40.429447174072266,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 40.629444122314453,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 40.829441070556641,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": true,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 41.030075073242188,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 41.230072021484375,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 41.430068969726562,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 41.63006591796875,
+				"x": 464.05718994140625,
+				"y": 1209.4432373046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 200.43916320800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 7.9956083297729492, 4.0087833404541016, -14 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -15.991216659545898, -20 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 41.830062866210938,
+				"x": 457.531005859375,
+				"y": 1240.045166015625,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 169.16181945800781,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 8.3083820343017578, 3.3832359313964844, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -16.616764068603516, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 42.030059814453125,
+				"x": 440.92587280273438,
+				"y": 1317.88623046875,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 89.641578674316406,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.1035842895507812, 1.7928314208984375, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.207168579101562, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 42.230056762695312,
+				"x": 440.39141845703125,
+				"y": 1340.32861328125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.080558776855469,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3191947937011719, 1.3616108894348145, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638389587402344, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 42.4300537109375,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 42.630050659179688,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 42.830047607421875,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": true,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 43.030044555664062,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 43.23004150390625,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 43.430042266845703,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 43.63006591796875,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 43.830062866210938,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 44.030059814453125,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 44.230056762695312,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 44.4300537109375,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 44.630050659179688,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 44.830047607421875,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 45.030044555664062,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 45.230056762695312,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 45.4300537109375,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 45.630050659179688,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		},
+		{
+			"state":
+			{
+				"time": 45.830047607421875,
+				"x": 444.76760864257812,
+				"y": 1342.1036376953125,
+				"z": 87.435066223144531,
+				"hp": 100,
+				"distance_to_enemy": 68.071571350097656,
+				"is_attacking": false,
+				"target_found": false
+			},
+			"actions": [
+				"Chase",
+				"Patrol",
+				"Idle",
+				"Attack"
+			],
+			"chosen_action_index": 3,
+			"sub_rewards": [
+				[ 9.3192844390869141, 1.3614320755004883, -24 ],
+				[ 2, 12, 6 ],
+				[ 1, 10, 8 ],
+				[ -20, -18.638568878173828, -30 ]
+			]
+		}
+	]
+}
